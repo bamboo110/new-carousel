@@ -24,6 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -60,7 +61,7 @@ body {
 
 .container {
   width: 800px;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -89,13 +90,25 @@ body {
 
 .button {
   display: flex;
-  margin: 200px auto 0;
+  margin: 100px auto 0;
   width: 200px;
 }
 
 .button .bar {
   margin: 5px;
-  width: 40px;
+  width: 50px;
+  height: 8px;
+  background-color: rgb(183, 179, 250);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  margin: 5px;
+  width: 70px;
   height: 8px;
   background-color: #6C63FF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
 }
